@@ -3761,7 +3761,7 @@
 			-webkit-transform: translateX(50%) translateY(50%);
 			-ms-transform: translateX(50%) translateY(50%);
 			transform: translateX(50%) translateY(50%);
-			position: absolute;
+
 			bottom: 50%;
 			right: 50%;
 			width: auto;
@@ -3769,6 +3769,7 @@
 			min-width: 100%;
 			min-height: 100%;
 			overflow: hidden;
+			position: absolute;
 		}
 
 		#banner:before {
@@ -3790,54 +3791,6 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner video {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				min-height: 0;
-				height: auto !important;
-				padding: 6rem 2rem 4rem 2rem;
-			}
-
-				#banner .inner {
-					width: 100%;
-				}
-
-				#banner h1 {
-					font-size: 1.75em;
-					margin-bottom: 0.5em;
-					padding-bottom: 0;
-				}
-
-				#banner p {
-					font-size: 1.25em;
-				}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner .button {
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#banner p {
-				font-size: 1em;
-			}
-
 		}
 
 		body.is-loading #banner .inner {
