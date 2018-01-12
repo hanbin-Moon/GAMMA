@@ -77,41 +77,48 @@
 										<div class="select-wrapper">
 											<select name="demo-category" id="demo-category">
 												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
+												<option value="1">Category1</option>
+												<option value="1">Category2</option>
+												<option value="1">Category3</option>
+												<option value="1">Category4</option>
 											</select>
 										</div>
 									</div>
 									<br>
 									<h4>Actions</h4>
-									<dd>input1</dd>
+
+									<dd>Value Input</dd>
 									<div class="row">
 									<div class="6u 12u$(xsmall)" syte=style="display: inline">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Input1" margin-right="50px"/>
-									</div>
-									<a href="#" class="button special small" margin-left="50px">Apply</a>
-									</div>
-									<dd>input2</dd>
-									<div class="row">
-									<div class="6u 12u$(xsmall)" syte=style="display: inline">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Input2" margin-right="50px"/>
-									</div>
-									<a href="#" class="button special small" margin-left="50px">Apply</a>
-									</div>
-									<dd>input3</dd>
-									<div class="row">
-									<div class="6u 12u$(xsmall)" syte=style="display: inline">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Input3" margin-right="50px"/>
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Value Input" margin-right="50px"/>
 									</div>
 									<a href="#" class="button special small" margin-left="50px">Apply</a>
 								</div>
-								<div class="fileBox">
-									<input type="text" class="fileName" readonly="readonly">
-									<label for="uploadBtn" class="btn_file">찾아보기</label>
-									<input type="file" id="uploadBtn" class="uploadBtn">
-								</div>
+								<br>
+
+							<dd>File Input</dd>
+							<div class="file_input">
+								<form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+									<div class="filebox bs3-primary">
+		              	<input class="upload-name" value="File upload" disabled="disabled">
+		            		<label for="ex_filename" class="button special small">Upload</label>
+		                <input type="file" id="ex_filename" class="upload-hidden">
+		              </div>
+									<div class="filebox bs3-primary">
+		              	<input class="upload-name" value="File upload" disabled="disabled">
+		            		<label for="ex_filename" class="button special small">Upload</label>
+		                <input type="file" id="ex_filename" class="upload-hidden">
+		              </div>
+									<div class="filebox bs3-primary">
+		              	<input class="upload-name" value="File upload" disabled="disabled">
+		            		<label for="ex_filename" class="button special small">Upload</label>
+		                <input type="file" id="ex_filename" class="upload-hidden">
+		              </div>
+
+									<!--submit Button -->
+									<input type="submit" class="button special small" value="submit">
+        				</form>
+							</div>
 
 							</div>
 							<div class="6u$ 12u$(medium)">
