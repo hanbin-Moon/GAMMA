@@ -135,5 +135,110 @@
 				});
 
 	});
+	zingchart.THEME="classic";
+
+var colors = {
+    blue : "rgba(151,187,205,1)",
+    gray : "#EBEBEB",
+    grayDark : "#3F3F3F"
+};
+
+
+function randomVal(min, max, num){
+    var aData = [];
+    for(var i = 0 ; i < num; i++){
+        var val = ((Math.random() * (max-min)) + min);
+        aData.push(parseInt(val));
+    }
+    return aData;
+}
+
+var myConfig = {
+    type : 'bar',
+    backgroundColor : "#FFF",
+    plot : {
+        lineColor : "rgba(151,187,205,1)",
+        lineWidth : "2px",
+        backgroundColor2 : "rgba(151,187,205,1)",
+        marker : {
+            backgroundColor : "rgba(151,187,205,1)",
+            borderColor : "white",
+            shadow : false
+        }
+    },
+    plotarea : {
+        backgroundColor : "white"
+    },
+    scaleX : {
+      lineColor : colors.gray,
+      lineWidth : "1px",
+      tick : {
+          lineColor : "#C7C7C7",
+          lineWidth : "1px"
+      },
+      guide :{
+          lineStyle : 'solid',
+          lineColor : colors.gray,
+          alpha : 1
+      },
+      item : {
+          color: colors.grayDark
+      }
+    },
+    scaleY : {
+      lineColor : colors.gray,
+      lineWidth : "1px",
+      tick : {
+          lineColor : "#C7C7C7",
+          lineWidth : "1px"
+      },
+        guide :{
+          lineStyle : 'solid',
+          lineColor : colors.gray,
+          alpha : 1
+      },
+      item : {
+          color: colors.grayDark
+      }
+    },
+    series : [
+        {
+            values : randomVal(22,42,8),
+            lineColor : "rgba(220,220,220,1)",
+            lineWidth : "2px",
+            alpha : 0.5,
+            borderWidth : "2px",
+            borderColor : "#C7C7C7",
+            borderTop : "2px solid #C7C7C7",
+            borderBottom : "0px",
+            backgroundColor1 : "rgba(220,220,220,1)",
+            backgroundColor2 : "rgba(220,220,220,1)",
+            marker : {
+                backgroundColor : "rgba(220,220,220,1)",
+            }
+
+        },
+        {
+            alpha : 0.5,
+            values : randomVal(7,32,8),
+            backgroundColor1 : colors.blue,
+            backgroundColor2 : colors.blue,
+            borderWidth : "2px",
+            borderColor : colors.blue,
+            borderTop : "2px solid " + colors.blue,
+            borderBottom : "0px"
+        }
+    ]
+}
+
+
+zingchart.render({
+    id : 'myChart',
+    data : myConfig,
+    hideprogresslogo : true,
+    height : 470,
+    width: 680
+});
+
 
 })(jQuery);

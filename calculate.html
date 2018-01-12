@@ -6,10 +6,25 @@
 	-->
 <html>
 	<head>
-		<title>calculate - Transitive by TEMPLATED</title>
+		<title>Calculate - Transitive by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+		<style>
+  	*,*:before,*:after {
+      box-sizing: border-box;
+    }
+	    #myChart{
+	        padding:10px;
+	    }
+	    #myChart-top{
+	        border: 1px solid #D9D9D9;
+	        box-shadow : 10px 10px 5px -4px rgba(224,224,224,0.6);
+	    }
+			</style>
 	</head>
 	<body class="subpage">
 
@@ -57,7 +72,19 @@
 											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 										</dd>
 									</dl>
-
+									<h4>Choose Category</h4>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<br>
 									<h4>Actions</h4>
 									<dd>input1</dd>
 									<div class="row">
@@ -85,17 +112,7 @@
 									<label for="uploadBtn" class="btn_file">찾아보기</label>
 									<input type="file" id="uploadBtn" class="uploadBtn">
 								</div>
-								<div class="12u$">
-									<div class="select-wrapper">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-								</div>
+
 							</div>
 							<div class="6u$ 12u$(medium)">
 
@@ -193,12 +210,15 @@
 										</table>
 									</div>
 
+									<h4>Column Chart</h4>
+									<div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Charts by ZingChart</a></div>
 							</div>
 						</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 
 
 		<!-- Four -->
@@ -213,8 +233,6 @@
 
 				</div>
 			</section>
-
-		<
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
