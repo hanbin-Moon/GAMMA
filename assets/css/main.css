@@ -2,14 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Taviraj:300,400,700,300i,400i,700i");
 
-/*
-	Transitive by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-/* Reset */
-
+/* Reset */f
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -46,7 +39,8 @@
 	}
 
 	body {
-		-webkit-text-size-adjust: none;
+		-web
+		kit-text-size-adjust: none;
 	}
 
 /* Box Model */
@@ -1856,6 +1850,7 @@
 		text-decoration: none;
 		white-space: nowrap;
 		text-transform: uppercase;
+		margin-left:5px;
 	}
 
 		input[type="submit"].icon,
@@ -2566,7 +2561,7 @@
 	}
 
 	table {
-		margin: 0 0 2rem 0;
+		margin: 0 0 2rem 0	;
 		width: 100%;
 	}
 
@@ -3761,7 +3756,7 @@
 			-webkit-transform: translateX(50%) translateY(50%);
 			-ms-transform: translateX(50%) translateY(50%);
 			transform: translateX(50%) translateY(50%);
-			position: absolute;
+
 			bottom: 50%;
 			right: 50%;
 			width: auto;
@@ -3769,6 +3764,7 @@
 			min-width: 100%;
 			min-height: 100%;
 			overflow: hidden;
+			position: absolute;
 		}
 
 		#banner:before {
@@ -3790,54 +3786,6 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner video {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				min-height: 0;
-				height: auto !important;
-				padding: 6rem 2rem 4rem 2rem;
-			}
-
-				#banner .inner {
-					width: 100%;
-				}
-
-				#banner h1 {
-					font-size: 1.75em;
-					margin-bottom: 0.5em;
-					padding-bottom: 0;
-				}
-
-				#banner p {
-					font-size: 1.25em;
-				}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner .button {
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#banner p {
-				font-size: 1em;
-			}
-
 		}
 
 		body.is-loading #banner .inner {
@@ -3920,33 +3868,33 @@
 		}
 
 		#flexgrid > * {
-			width: 33.33333%;
+			width: 50%;
 		}
 
 		#flexgrid > * {
 			padding: 3rem;
-			width: calc(33.33333% + 2rem);
+			width: calc(50% + 2rem);
 		}
 
-		#flexgrid > :nth-child(-n + 3) {
+		#flexgrid > :nth-child(-n + 2) {
 			padding-top: 0;
 		}
 
-		#flexgrid > :nth-last-child(-n + 3) {
+		#flexgrid > :nth-last-child(-n + 2) {
 			padding-bottom: 0;
 		}
 
-		#flexgrid > :nth-child(3n + 1) {
+		#flexgrid > :nth-child(2n + 1) {
 			padding-left: 0;
 		}
 
-		#flexgrid > :nth-child(3n) {
+		#flexgrid > :nth-child(2n) {
 			padding-right: 0;
 		}
 
-		#flexgrid > :nth-child(3n + 1),
-		#flexgrid > :nth-child(3n) {
-			width: calc(33.33333% + -1rem);
+		#flexgrid > :nth-child(2n + 1),
+		#flexgrid > :nth-child(2n) {
+			width: calc(50% + -1rem);
 		}
 
 		#flexgrid > div {
@@ -4223,7 +4171,45 @@
 
 			.grid-style > :nth-child(1n + 1),
 			.grid-style > :nth-child(1n) {
-				width: calc(100% + 2rem);
+				width: calc(100% + 2rem)
+			}
+			.zc-ref {
+			  display: none;
 			}
 
 		}
+		body {margin: 10px}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+
+/* named upload */
+.filebox .upload-name {
+    display: inline-block;
+    padding: .5em .75em;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+  	border: 1px solid #ebebeb;
+  	border-bottom-color: #e2e2e2;
+  	border-radius: .25em;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+}
+
+.filebox.bs3-primary label {
+	  color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
