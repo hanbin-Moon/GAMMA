@@ -12,7 +12,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
 		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
+	</script>
+
 		<style>
   	*,*:before,*:after {
       box-sizing: border-box;
@@ -38,7 +40,7 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="calculate.html">calculate</a></li>
+					<li><a href="calculate.html">Calculate</a></li>
 					<li><a href="etc.html">Etc</a></li>
 				</ul>
 			</nav>
@@ -104,16 +106,6 @@
 		            		<label for="ex_filename" class="button special small">Upload</label>
 		                <input type="file" id="ex_filename" class="upload-hidden">
 		              </div>
-									<div class="filebox bs3-primary">
-		              	<input class="upload-name" value="File upload" disabled="disabled">
-		            		<label for="ex_filename" class="button special small">Upload</label>
-		                <input type="file" id="ex_filename" class="upload-hidden">
-		              </div>
-									<div class="filebox bs3-primary">
-		              	<input class="upload-name" value="File upload" disabled="disabled">
-		            		<label for="ex_filename" class="button special small">Upload</label>
-		                <input type="file" id="ex_filename" class="upload-hidden">
-		              </div>
 
 									<!--submit Button -->
 									<input type="submit" class="button special small" value="submit">
@@ -124,109 +116,16 @@
 							<div class="6u$ 12u$(medium)">
 
 									<h3>Output</h3>
+									<div id="myChart"></div>
+									<div id="myChart2"></div>
 
-									<h4>Output1</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Output2</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Column Chart</h4>
-									<div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Charts by ZingChart</a></div>
+									</script>
 							</div>
 						</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
-
 
 		<!-- Four -->
 			<section id="four" class="wrapper style3">
@@ -242,7 +141,7 @@
 			</section>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></s	cript>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
