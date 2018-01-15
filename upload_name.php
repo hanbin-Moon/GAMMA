@@ -146,9 +146,6 @@ if(mysqli_connect_error()){
 	Please try again later.</p>';
 	exit;
 }
-
-
-
 /*
 $check="SELECT * from txt WHERE email='$_POST['value']'"
 
@@ -160,13 +157,11 @@ if($result->num_rows==1)
 	exit(1);
 }(?,$uploaded_file,$_POST['value'])";
 */
-
-/*
 //scp 연결 부분!!
-$connection2 = ssh2_connect('GAMMA@210.94.194.55', 22);
+$connection2 = ssh2_connect('GAMMA@210.94.194.55', 2222);
 ssh2_auth_password($connection2, 'GAMMA', 'gamma1234');
-ssh2_scp_send($connection2, '/Users/admin/Desktop/gammaData/chocho', '/home/GAMMA/chotest', 0644);
-*/
+ssh2_scp_send($connection2, '/Users/admin/Desktop/gammaData/wndzlf@gmail.com', '/home/GAMMA/chotest', 0644);
+
 if($_FILES['the_file']['error']>0)
 {
   echo 'Problem: ';
