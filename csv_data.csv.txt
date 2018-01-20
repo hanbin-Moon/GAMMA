@@ -1,2 +1,0 @@
-Name,City,Country
-William,Yamrat,Nigeria
